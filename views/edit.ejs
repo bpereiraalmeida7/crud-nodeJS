@@ -1,21 +1,31 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>My CRUD in NodeJS</title>
-</head>
+<% include partials/head %>
 <body>
-
-    <h2>Editar Resgistro<h2>
-    <% data.forEach(function(details) { %>
-    <form action="/edit/<%= details._id %>" method="POST">
-        <input type="text" value="<%= details.name %>" name="name">
-        <input type="text" value="<%= details.surname %>" name="surname">
-        <br />
-        <button><a href="/show">Todos</a></button>
-        <button type="submit">Editar</button>
-    </form> 
-    <% }) %>
-
+    <div class="container">
+        <br>
+        <div class="col-lg-12" style="text-align: right;">
+            <a class="btn btn-outline-info btn-md" href="/show">Lista</a>
+        </div>
+        <h3>Editar Registro<h3>
+        <div class="container">
+            <div class="row justify-content-md">
+            <% data.forEach(function(details) { %>
+                <form action="/edit/<%= details._id %>" method="POST">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" value="<%= details.name %>" name="name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" value="<%= details.surname %>" name="surname">
+                        </div>  
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+                        </div>
+                    </div>
+                </form> 
+            </div>
+        </div>
+            <% }) %>
+    </div>
 </body>
+<% include partials/script %>
 </html>
