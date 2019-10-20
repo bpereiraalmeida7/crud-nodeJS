@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 const MongoClient = require('mongodb').MongoClient;
+var db = require("mongodb");
 
 const uri = "mongodb+srv://bpereiraalmeida:teste123@cluster0-itjmp.mongodb.net/test?retryWrites=true&w=majority";
 const ObjectId = require('mongodb').ObjectID
