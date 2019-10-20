@@ -33,8 +33,27 @@
 <% include partials/script %>
 <script>
     $(document).ready(function() {
-        $('#example').DataTable();
+        $('#example').DataTable({
+        language: {
+        processing:     "Buscando registros...",
+        search:         "Buscar",
+        lengthMenu:    "Exibir _MENU_ registros",
+        info:           "Exibindo registros _START_ - _END_ de _TOTAL_ registro(s)",
+        infoEmpty:      "Exibindo registros 0 - 0 de 0 registro(s)",
+        infoFiltered:   "(filtrado de _MAX_ itens no total)",
+        infoPostFix:    "",
+        loadingRecords: "Buscando registros...",
+        zeroRecords:    "Registro não encontrado",
+        emptyTable:     "Sem dados cadastrados",
+        paginate: {
+            first:      "Primeiro",
+            previous:   "Anterior",
+            next:       "Próximo",
+            last:       "Último"
+        }
+        }})
     } );
+
 </script>        
 </body>
 </html>
