@@ -13,3 +13,6 @@ O banco Mongo utilizado, foi via cloud: https://cloud.mongodb.com
 
 > docker-compose up -d
 
+* Abra sua aplicação no navegador com o endereço:
+
+> http://localhost:3000 :zap:
