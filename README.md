@@ -5,6 +5,8 @@ O banco Mongo utilizado, foi via cloud: https://cloud.mongodb.com, com uma conta
 
 ### :zap: Para executar:
 
+* Clone o repositório e utilize a branch Master.  
+
 * Construa a imagem:
 
 > docker-compose build
@@ -16,3 +18,6 @@ O banco Mongo utilizado, foi via cloud: https://cloud.mongodb.com, com uma conta
 * Abra sua aplicação no navegador com o endereço:
 
 > http://localhost:3000 
+
+
+**Para uma demonstração da aplicação (sem utilização do Docker), acesse o deploy feito via Heroku: [Crud-Node](https://crud-node-docker.herokuapp.com/) 🚀**
