@@ -5,6 +5,7 @@ const MongoClient = require('mongodb').MongoClient;
 var db = require("mongodb");
 
 const uri = "mongodb+srv://bpereiraalmeida:teste123@cluster0-itjmp.mongodb.net/test?retryWrites=true&w=majority";
+//const uri = 'mongodb://mongo:27017/docker-node-mongo';
 const ObjectId = require('mongodb').ObjectID
 
 MongoClient.connect(uri, (err, client) => {
