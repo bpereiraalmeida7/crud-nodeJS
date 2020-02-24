@@ -1,4 +1,15 @@
-# crud-nodeJS-html
+# crud-nodeJS-docker :construction:
 
-Crud básico de aprendizado(Node), utilizando NodeJS, Express, Template Ejs com bootstrap simples,utilizando MongoDB como banco de dados. 
+Crud básico de aprendizado, utilizando NodeJS, Express, Template Ejs com bootstrap simples rodando em docker:whale:, MongoDB como banco de dados. 
 O banco Mongo utilizado, foi via cloud: https://cloud.mongodb.com
+
+### Para executar:
+
+* Construa a imagem:
+
+> docker-compose build
+
+* Rode a imagem:
+
+> docker-compose up -d
+
